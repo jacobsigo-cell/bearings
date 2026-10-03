@@ -20,7 +20,7 @@ jobs:
 
       - name: Extract vertical slice
         run: |
-          unzip -o bearings-vertical-slice-github-ready.zip -x README.md
+          unzip -o bearings-vertical-slice-github-ready.zip -x README.md ".github/workflows/deploy-pages.yml"
 
       - name: Commit extracted application
         run: |
